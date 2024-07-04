@@ -22,6 +22,7 @@ import com.projectecho.et.rest.FilterDefinitionObject.DerivedFromObjectTypeNameE
 import com.projectecho.exceptions.CustomException;
 import com.projectecho.mvcmodels.SnapshotFilterDefinitionObject;
 
+
 //@SessionScope
 @Service
 public class FilterDefinitionServiceImpl extends CommonRestServiceImpl implements FilterDefinitionService {
