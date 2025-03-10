@@ -49,6 +49,7 @@ public class FilterDefinitionServiceImpl extends CommonRestServiceImpl implement
                     Document xmlDoc = dBuilder.parse(new ByteArrayInputStream(xml.getBytes()));
                     
                     TransformerFactory tf = TransformerFactory.newInstance();
+                    
                     Transformer trans = tf.newTransformer();
                     trans.setOutputProperty("omit-xml-declaration", "yes");
                     StringWriter sw = new StringWriter();
