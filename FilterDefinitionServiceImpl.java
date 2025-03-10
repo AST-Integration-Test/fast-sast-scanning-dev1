@@ -54,6 +54,7 @@ public class FilterDefinitionServiceImpl extends CommonRestServiceImpl implement
                     trans.setOutputProperty("omit-xml-declaration", "yes");
                     StringWriter sw = new StringWriter();
                     trans.transform(new DOMSource(xmlDoc), new StreamResult(sw));
+                    //
                     ssfd.setFilterDefinitionXml(sw.toString());
                 }catch(Exception ee) {
                     throw new CustomException("Failed to map filter conditions with Data Extension columns for DE:"+ssfd.getDerivedFromObjectName()+" for Data Filter: "+ssfd.getName());
