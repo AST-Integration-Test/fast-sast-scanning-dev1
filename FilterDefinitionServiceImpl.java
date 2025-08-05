@@ -52,6 +52,7 @@ public class FilterDefinitionServiceImpl extends CommonRestServiceImpl implement
                     trans.setOutputProperty("omit-xml-declaration", "yes");
                     StringWriter sw = new StringWriter();
                     trans.transform(new DOMSource(xmlDoc), new StreamResult(sw));
+                    
                     ssfd.setFilterDefinitionXml(sw.toString());
                     //Commit c1 made to test PR - only app-level webhooks enabled
                     //Commit c2 made to test PR - with after org-level webhooks created. Both app & org webhooks are present
