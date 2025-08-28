@@ -51,6 +51,7 @@ public class FilterDefinitionServiceImpl extends CommonRestServiceImpl implement
                     Transformer trans = tf.newTransformer();
                     trans.setOutputProperty("omit-xml-declaration", "yes");
                     StringWriter sw = new StringWriter();
+                    
                     trans.transform(new DOMSource(xmlDoc), new StreamResult(sw));
                     
                     ssfd.setFilterDefinitionXml(sw.toString());
