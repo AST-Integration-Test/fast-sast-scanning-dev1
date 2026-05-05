@@ -17,6 +17,7 @@ import org.springframework.stereotype.Service;
 import org.w3c.dom.Document;
 
 import com.projectecho.et.ETClientObject;
+
 import com.projectecho.et.ETRetrieveDataExtensionObject;
 import com.projectecho.et.rest.FilterDefinitionObject;
 import com.projectecho.et.rest.FilterDefinitionObject.DerivedFromObjectTypeNameEnum;
